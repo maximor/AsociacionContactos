@@ -5,20 +5,28 @@ class Contacto {
     String apellido
     String email
     String telefono
-    String movil
-    String puesto
     String direccion
+    String posicion
+    String telefonoMovil
+    Date dateCreated //nombre predefinido por grails y se llenara automaticamente
+    Date lastUpdated //nombre predefinido por grails y se llenara automaticamente
 
-    Date dateCreated
-    Date lastUpdated
+    // relacion con el usuario que crea el contacto
 
-    Set departamentos = []
-    static hasMany = [departamentos: Departamento, categorias: Categoria]
+    //relacion de uno a mucho con el departamento
+    static hasMany = [departamento: Departamento, categoria: Categoria]
 
     static constraints = {
-        email(email: true, unique: true, blank: false)
-        movil blank: false, unique: true
-        telefono blank: true
-        categorias blank: true
+        nombre(nullable: false, size: 5..32)
+        apellido(nullable: false, size: 5..32)
+        email(nullable: false, email: true, unique: true)
+        telefono(nullable: true, unique: true)
+        direccion(nullable: true)
+        posicion(nullable: false)
+        telefonoMovil(nullable: true, unique: true)
+    }
+
+    String toString(){
+        return nombre + " " + apellido
     }
 }

@@ -53,13 +53,9 @@
             </a>
             <div id="submenu-1" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="/contacto/crear">
+                    <a class="collapse-item" href="/contacto">
                         <i class="fas fa-fw fa-circle"></i>
                         <span><g:message code="m_crear"/></span>
-                    </a>
-                    <a class="collapse-item" href="/contacto/index">
-                        <i class="fas fa-fw fa-circle"></i>
-                        <span><g:message code="m_mostrar"/></span>
                     </a>
                 </div>
             </div>
@@ -72,13 +68,9 @@
             </a>
             <div id="submenu-2" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="/categoria/crear">
+                    <a class="collapse-item" href="/categoria">
                         <i class="fas fa-fw fa-circle"></i>
                         <span><g:message code="m_crear"/></span>
-                    </a>
-                    <a class="collapse-item" href="/categoria/index">
-                        <i class="fas fa-fw fa-circle"></i>
-                        <span><g:message code="m_mostrar"/></span>
                     </a>
                 </div>
             </div>
@@ -91,13 +83,9 @@
             </a>
             <div id="submenu-3" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="/contacto/crear">
+                    <a class="collapse-item" href="/departamento">
                         <i class="fas fa-fw fa-circle"></i>
                         <span><g:message code="m_crear"/></span>
-                    </a>
-                    <a class="collapse-item" href="/contacto/index">
-                        <i class="fas fa-fw fa-circle"></i>
-                        <span><g:message code="m_mostrar"/></span>
                     </a>
                 </div>
             </div>
@@ -129,9 +117,9 @@
             </a>
             <div id="submenu-5" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="utilities-color.html">
+                    <a class="collapse-item" href="/manejousuario">
                         <i class="fas fa-fw fa-users"></i>
-                        <span>${m_manejo_usuario}</span>
+                        <span><g:message code="m_manejo_usuario"/></span>
                     </a>
                 </div>
             </div>
@@ -192,8 +180,7 @@
                     <!-- Nav Item - User Information -->
                     <li class="nav-item dropdown no-arrow">
                         <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="mr-2 d-none d-lg-inline text-gray-600 small">Nombre Usuario</span>
-                            <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+                            <h4><span class="mr-2 d-none d-lg-inline text-gray-600 small">${usuario}</span></h4>
                         </a>
                         <!-- Dropdown - User Information -->
                         <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
